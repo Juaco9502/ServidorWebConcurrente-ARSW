@@ -38,7 +38,7 @@ java -cp target/classes co.edu.escuelaing.concurrentServer.WebServerAdministrato
 ![Websites](img/imagen3.PNG)
 
 ### GET
-![Console](img/imagen2.PNG)
+![Get](img/get.PNG)
 
 # Diagram
 ![Diagram](img/diagram.PNG)
