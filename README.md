@@ -7,6 +7,7 @@ Write a web server that supports multiple (concurrent) requests in a row. The se
 Copie el proyecto via git clone en cualquier diretorio para empezar a trabajar:
 ```
 git clone https://github.com/Juaco9502/ServidorWebConcurrente-ARSW.git
+```
 
 ## INSTALL
 
@@ -15,6 +16,7 @@ git clone https://github.com/Juaco9502/ServidorWebConcurrente-ARSW.git
 ```
 $$ mvn package
 ```
+
 2.(Optional):
 If you want to view the documentation of the application, execute the following command and check the following path: root / target:
 
@@ -28,6 +30,7 @@ The following command must be used in the project root folder:
 ```
 java -cp target/classes co.edu.escuelaing.concurrentServer.WebServerAdministrator
 ```
+
 ### Execute
 ![Execute](img/imagen1.PNG)
 ### Websites in browser
