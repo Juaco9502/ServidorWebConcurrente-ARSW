@@ -33,10 +33,12 @@ java -cp target/classes co.edu.escuelaing.concurrentServer.WebServerAdministrato
 
 ### Execute
 ![Execute](img/imagen1.PNG)
+
 ### Websites in browser
-![Pages](img/imagen2.PNG)
+![Websites](img/imagen3.PNG)
+
 ### GET
-![Console](img/imagen3.PNG)
+![Console](img/imagen2.PNG)
 
 # Diagram
 ![Diagram](img/diagram.PNG)
