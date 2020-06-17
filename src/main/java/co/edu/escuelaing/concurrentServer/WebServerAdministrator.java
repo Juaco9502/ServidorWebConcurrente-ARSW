@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  * @author juaco
  */
 public class WebServerAdministrator {
-    public static Integer threads= 20;
+    public static Integer threads= 5;
     
     public static void main(String[] args) throws IOException {
         MapperAdministrator mA = new MapperAdministrator();
