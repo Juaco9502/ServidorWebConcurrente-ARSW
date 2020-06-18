@@ -20,12 +20,11 @@ public class MyWebServer implements Runnable{
   
      Socket myClientSocket;
      ServerSocket serverSocket;
-     MapperAdministrator mA;
+   
 
-    MyWebServer(ServerSocket serverSocket,MapperAdministrator mA) {
-        
+    MyWebServer(ServerSocket serverSocket) {
+    
         this.serverSocket=serverSocket;
-        this.mA=mA;
     }
     
 
@@ -45,22 +44,12 @@ public class MyWebServer implements Runnable{
                 
                 RequestHandler rH = new RequestHandler(myClientSocket);
                 DataManager dM = new DataManager();   
-                dM.sendResource(rH.getRequest(),myClientSocket,mA);
+                dM.sendResource(rH.getRequest(),myClientSocket);
                 
             } catch (IOException ex) {
                 Logger.getLogger(MyWebServer.class.getName()).log(Level.SEVERE, null, ex);
 
-        }
-
-
-        
-        
-            
-
- 
-        
-        
+        }       
     }
        
-
 }
