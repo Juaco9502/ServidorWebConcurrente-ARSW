@@ -26,19 +26,15 @@ public class MyWebServer implements Runnable{
     
         this.serverSocket=serverSocket;
     }
+
+    MyWebServer(ServerSocket serverSocket, Socket clientSocket) {
+        this.serverSocket = serverSocket;
+        this.myClientSocket = clientSocket;
+    }
     
 
     @Override
-    public void run() {
-
-            try {
-                System.err.println("READY:");
-                this.myClientSocket=serverSocket.accept();
-            }catch (IOException e) {
-                System.err.println("Accept failed.");
-            }
-            
-            
+    public void run() {                   
             try {
                 
                 

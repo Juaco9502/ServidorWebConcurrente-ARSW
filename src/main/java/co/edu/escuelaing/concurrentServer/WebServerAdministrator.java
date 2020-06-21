@@ -7,6 +7,7 @@
 
 import java.io.IOException;
 import java.net.ServerSocket;
+import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.logging.Level;
@@ -28,7 +29,8 @@ public class WebServerAdministrator {
         
         ExecutorService executor = Executors.newFixedThreadPool(threads);
         while (!isCompleted){
-            executor.execute(new MyWebServer(serverSocket));
+            Socket clientSocket = serverSocket.accept();
+            executor.execute(new MyWebServer(serverSocket,clientSocket));
         }
         
         try {
