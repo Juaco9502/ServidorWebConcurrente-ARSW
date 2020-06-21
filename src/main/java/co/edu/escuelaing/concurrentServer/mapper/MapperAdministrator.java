@@ -25,7 +25,7 @@ public class MapperAdministrator {
 
     public void activeMappers(){
         try {
-            Class c = Class.forName("co.edu.escuelaing.arem.proyecto.Mapper.Components.MyExampleApp");
+            Class c = Class.forName("co.edu.escuelaing.concurrentServer.mapper.components.MyExampleApp");
             for (Method m : c.getMethods()) {
                 Constructor cons = c.getConstructor();
                 if (m.isAnnotationPresent(Mapeo.class)) {
