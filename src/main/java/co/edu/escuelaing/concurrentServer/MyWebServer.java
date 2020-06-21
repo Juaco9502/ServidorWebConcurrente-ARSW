@@ -41,6 +41,7 @@ public class MyWebServer implements Runnable{
                 RequestHandler rH = new RequestHandler(myClientSocket);
                 DataManager dM = new DataManager();   
                 dM.sendResource(rH.getRequest(),myClientSocket);
+                myClientSocket.close();
                 
             } catch (IOException ex) {
                 Logger.getLogger(MyWebServer.class.getName()).log(Level.SEVERE, null, ex);
